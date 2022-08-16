@@ -25,6 +25,9 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import java.util.ArrayList;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -187,6 +190,10 @@ public class MainActivity extends AppCompatActivity {
                     }
                     final double averageDistance = sum / MAX_DISTANCE_VALUES;
                     distanceList.clear();
+                    // Write a message to the database
+                    FirebaseDatabase database = FirebaseDatabase.getInstance();
+                    DatabaseReference myRef = database.getReference("proximity");
+                    myRef.setValue(Double.valueOf(averageDistance).toString());
                     showToast("iTag is " + averageDistance + " mts. away");
                 } else {
                     showToast("Gathering Data");

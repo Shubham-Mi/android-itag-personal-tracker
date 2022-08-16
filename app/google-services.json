@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "459509611668",
+    "project_id": "android-itag-personal-tracker",
+    "storage_bucket": "android-itag-personal-tracker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459509611668:android:02b37cfb78063a4f564881",
+        "android_client_info": {
+          "package_name": "com.example.androiditagpersonaltracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459509611668-oefh53e2aclf084c8tck1nej5g5hutho.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAC9mMfOAkq2Y8rxqy8IeYi9Neb0LPNCZM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459509611668-oefh53e2aclf084c8tck1nej5g5hutho.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
